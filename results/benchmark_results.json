@@ -1,0 +1,38 @@
+{
+  "dataset": "MovieLens 100K",
+  "primary_result": {
+    "protocol": "270 high-intent users; controlled mother pool 500; natural recall 100; validation-frozen DeepFM/retrieval fusion; Top-10",
+    "user_count": 270,
+    "precision_at_10": 0.2030,
+    "recall_at_10": 0.2849,
+    "hit_rate_at_10": 0.9111,
+    "ndcg_at_10": 0.2977,
+    "candidate_auc": 0.7535,
+    "retrieval_hit_upper_bound": 1.0,
+    "retrieval_recall": 0.7523
+  },
+  "milestone_result": {
+    "protocol": "270 support users; 132 high-intent evaluation users; controlled mother pool 500; natural recall 100; Top-10",
+    "user_count": 132,
+    "precision_at_10": 0.2091,
+    "recall_at_10": 0.2725,
+    "hit_rate_at_10": 0.9394,
+    "ndcg_at_10": 0.2865,
+    "candidate_auc": 0.7470,
+    "retrieval_hit_upper_bound": 1.0,
+    "retrieval_recall": 0.7558
+  },
+  "expansion_stress_test": {
+    "protocol": "419 support/evaluation users; controlled mother pool 500; natural recall 100; Top-10",
+    "user_count": 419,
+    "precision_at_10": 0.2074,
+    "recall_at_10": 0.2924,
+    "hit_rate_at_10": 0.8998,
+    "ndcg_at_10": 0.2971,
+    "candidate_auc": 0.7649,
+    "retrieval_hit_upper_bound": 0.9976,
+    "retrieval_recall": 0.7762
+  },
+  "disclosure": "These are recorded cloud experiment results. Controlled mode guarantees held-out items only in the 500-item mother pool, never in recalled Top-100 or ranked Top-10. Results are not a production full-catalog estimate."
+}
+

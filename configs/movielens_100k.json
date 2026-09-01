@@ -1,0 +1,52 @@
+{
+  "data": {
+    "positive_rating": 4.0,
+    "min_user_interactions": 50,
+    "min_user_positive_rate": 0.6,
+    "min_user_positives": 5,
+    "min_user_negatives": 5,
+    "validation_holdout_size": 5,
+    "test_holdout_size": 10,
+    "party_count": 2,
+    "seed": 2026
+  },
+  "retrieval": {
+    "candidate_mode": "controlled_500",
+    "mother_pool_size": 500,
+    "recall_size": 100,
+    "popularity_weight": 0.15,
+    "itemcf_weight": 0.35,
+    "content_weight": 0.15,
+    "signed_itemcf_weight": 0.05,
+    "usercf_weight": 0.3,
+    "positive_history_limit": 50,
+    "itemcf_neighbors": 160
+  },
+  "model": {
+    "embedding_dim": 16,
+    "hidden_units": [128, 64, 32],
+    "dropout": 0.14,
+    "learning_rate": 0.0005,
+    "l2_regularization": 0.00002,
+    "epochs": 16,
+    "batch_size": 256,
+    "aggregate_freq": 1,
+    "negatives_per_positive": 12,
+    "positive_class_weight_cap": 2.5,
+    "focal_gamma": 1.5,
+    "bce_weight": 0.85,
+    "item_id_dropout_rate": 0.05
+  },
+  "ranking": {
+    "top_k": 10,
+    "fusion_plans": [
+      [1.0, 0.0],
+      [0.75, 0.25],
+      [0.55, 0.45],
+      [0.5, 0.5],
+      [0.45, 0.55],
+      [0.25, 0.75]
+    ]
+  }
+}
+

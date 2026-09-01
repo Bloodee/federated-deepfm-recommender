@@ -1,0 +1,6 @@
+numpy==1.23.5
+pandas==1.5.3
+tensorflow==2.12.0
+secretflow==1.11.0b1
+secretflow_fl==1.11.0b1
+
