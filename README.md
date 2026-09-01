@@ -2,7 +2,7 @@
 
 > A privacy-preserving, multi-stage movie recommendation pipeline: **local hybrid recall → horizontal federated DeepFM → validation-frozen Top-10 ranking**.
 
-[中文面试手册](docs/INTERVIEW_GUIDE.md) · [实验协议](docs/EXPERIMENT_PROTOCOL.md) · [简历描述与技术栈](docs/RESUME_PROJECT.md)
+[实验协议与可信边界](docs/EXPERIMENT_PROTOCOL.md)
 
 ## Why this project
 
